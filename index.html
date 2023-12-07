@@ -1,16 +1,25 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Home Page</title>
-        <link rel="stylesheet" href="styling.css" type="text/css">
-        <script type="text/javascript" src="stationinfo.js"></script>
-    </head>
-    <body id="body">
-        <h1>Welcome to MetroHelp</h1>
-        <form name="stations" onsubmit="stationInfo(); return false">
-            <label for="station">Select a Station:</label>
-            <select id="station" name="station">     
-            </select>
-            <input type="submit" class="submit" value="Submit">
-        </form>
-    </body>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styling.css" type="text/css">
+    <script type="text/javascript" src="stationinfo.js"></script>
+</head>
+
+<body id="body">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="documentation.html">Documentation</a></li>     
+        </ul>
+    </nav>
+    <h1>Welcome to MetroHelp</h1>
+    <form name="stations" id="stationForm">
+        <label for="station">Select a Station:</label>
+        <select id="station" name="station">     
+        </select>
+        <input type="submit" class="submit" value="Submit">
+    </form>
+</body>
 </html>
