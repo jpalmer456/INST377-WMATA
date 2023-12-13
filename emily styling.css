@@ -69,7 +69,6 @@ select {
 
 #stationInformation {
     background-color: #679436;
-    float: left;
     border: 8px;
     border-style: outset;
     border-color: #679436;
@@ -80,7 +79,6 @@ select {
 }
 
 #sidebar {
-    float: right;
     background-color: #6EA0C4;
     border: 8px;
     border-color: #6EA0C4;
@@ -105,4 +103,15 @@ select {
     float: right;
     width: 30%;
 }
-  
+
+#elevators {
+    background-color: #6EA0C4;
+    border: 8px;
+    border-color: #6EA0C4;
+    border-radius: 5px;
+    padding: 5px 15px 20px 15px;
+    margin-top: 2px;
+    border-style: outset;
+    border-color: 80A39F;
+    font-size: 22px;
+}

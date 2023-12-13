@@ -37,6 +37,7 @@ function stationInfo() {
     
 function selectedStation() {
     const selectedStation = document.getElementById("station").value
+    const elevators = document.getElementById("elevators")
 
     const headers = {
         "api_key": "327336c3b459437b953cfabe8b3583c3", 
@@ -45,15 +46,28 @@ function selectedStation() {
     fetch(`https://api.wmata.com/Rail.svc/json/jStationInfo?StationCode=${selectedStation}`, {headers})
         .then((res) => res.json())
         .then((res) => {
-            console.log(res)
             document.getElementById("stationAddress").innerHTML = `<b>Station Name:</b> ${res.Name} <br> <b>Address:</b> ${res.Address.Street}, ${res.Address.City}, ${res.Address.State} ${res.Address.Zip}`
         })
 
     fetch(`https://api.wmata.com/Rail.svc/json/jStationTimes?StationCode=${selectedStation}`, {headers})
         .then((res) => res.json())
         .then((res) => {
-            console.log(res)
             document.getElementById("stationTimes").innerHTML = `<b>Opening Time:</b> ${res.StationTimes[0].Monday.OpeningTime}`
+        })
+
+    fetch(`https://api.wmata.com/Incidents.svc/json/ElevatorIncidents?StationCode=${selectedStation}`, {headers})
+        .then((res) => res.json())
+        .then((res) => {
+            console.log(res)
+            elevator_list = res.ElevatorIncidents.length
+            if(elevator_list == 0) {
+                document.getElementById("elevators").innerHTML = "Your selected station has no elevator/escalator outages."
+            }
+            else {
+                const outage = document.createElement("outage")
+                outage.innerHTML = `<h2> Alert! </h2><br> The ${res.ElevatorIncidents[1].LocationDescription} at ${res.ElevatorIncidents[1].StationName} is out of service.`
+                elevators.appendChild(outage)
+            }
         })
 }
 
