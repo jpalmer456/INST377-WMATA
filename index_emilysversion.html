@@ -8,23 +8,34 @@
 </head>
 
 <body id="body">
-    <nav>
+    <header>
+        <h1>Welcome to MetroHelp</h1>
+    </header>
+    <nav id="navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="documentation.html">Documentation</a></li>     
         </ul>
     </nav>
-    <h1>Welcome to MetroHelp</h1>
-    <form name="stations" id="stationForm" onsubmit="selectedStation(); return false">
-        <label for="station">Select a Station:</label>
-        <select id="station" name="station">     
-        </select>
-        <input id="submit" type="submit" class="submit" value="Submit">
-    </form>
-    <br>
-    <div id="stationInformation"></div>
-    <div id="stationTimes"></div>
-    <aside id="sidebar">Rail Incidents:</aside>
+    <div class="info-box">
+        <div id="stationInformation">
+            <form name="stations" id="stationForm" onsubmit="selectedStation(); return false">
+                <label for="station"><h2>Select a Station:</h2></label>
+                <select id="station" name="station">     
+                </select>
+                <br>
+                <br>
+                <input class="button-74" id="submit" type="submit" class="submit" value="Submit">
+            </form>
+        </div>
+        <br>
+        <div id="stationInformation">
+            <h3>Station Information:</h3>
+            <div id="stationAddress">Selected station information will appear here.</div>
+            <div id="stationTimes"></div>
+        </div>
+    </div>
+        <aside class="incident-box" id="sidebar"></aside>
 </body>
 </html>
