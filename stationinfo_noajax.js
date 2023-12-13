@@ -29,7 +29,7 @@ function stationInfo() {
             for (i=0; i<res.incidents.length; i++) {
                 const incident = document.createElement("incident")
                 incident.innerHTML = res.Incidents[i].Description;
-                sidebar.appendChild(option)
+                incident-box.appendChild(option)
             }
         }
     })
@@ -46,14 +46,14 @@ function selectedStation() {
         .then((res) => res.json())
         .then((res) => {
             console.log(res)
-            document.getElementById("stationInformation").innerHTML = `Station Name: ${res.Name} <br> Address: ${res.Address.Street}, ${res.Address.City}, ${res.Address.State} ${res.Address.Zip}`
+            document.getElementById("stationAddress").innerHTML = `<b>Station Name:</b> ${res.Name} <br> <b>Address:</b> ${res.Address.Street}, ${res.Address.City}, ${res.Address.State} ${res.Address.Zip}`
         })
 
     fetch(`https://api.wmata.com/Rail.svc/json/jStationTimes?StationCode=${selectedStation}`, {headers})
         .then((res) => res.json())
         .then((res) => {
             console.log(res)
-            document.getElementById("stationTimes").innerHTML = `Opening Time: ${res.StationTimes[0].Monday.OpeningTime}`
+            document.getElementById("stationTimes").innerHTML = `<b>Opening Time:</b> ${res.StationTimes[0].Monday.OpeningTime}`
         })
 }
 
