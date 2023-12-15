@@ -22,14 +22,14 @@ function stationInfo() {
         .then((res) => res.json())
         .then((res) => {
         console.log(res.Incidents.length)
-        if(res.Incidents.length == 0) {
+        incident_list = res.Incidents.length;
+        if(incident_list == 0) {
             document.getElementById("sidebar").innerHTML = "There are currently no rail incidents :)"
         } else {
-            incident_list = res.Incidents.length;
-            for (i=0; i<res.incidents.length; i++) {
+            for (i=0; i<incident_list; i++) {
                 const incident = document.createElement("incident")
-                incident.innerHTML = res.Incidents[i].Description;
-                incident-box.appendChild(option)
+                incident.innerHTML = `${res.Incidents[i].Description}<br><br>`;
+                sidebar.appendChild(incident)
             }
         }
     })
