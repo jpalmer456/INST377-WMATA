@@ -21,7 +21,7 @@ function stationInfo() {
     fetch("https://api.wmata.com/Incidents.svc/json/Incidents", {headers})
         .then((res) => res.json())
         .then((res) => {
-        console.log(res.Incidents.length)
+        console.log(res)
         incident_list = res.Incidents.length;
         if(incident_list == 0) {
             document.getElementById("sidebar").innerHTML = "There are currently no rail incidents :)"
@@ -61,12 +61,16 @@ function selectedStation() {
             console.log(res)
             elevator_list = res.ElevatorIncidents.length
             if(elevator_list == 0) {
-                document.getElementById("elevators").innerHTML = "Your selected station has no elevator/escalator outages."
+                const outage = document.createElement("outage")
+                outage.innerHTML = "Your selected station has no elevator/escalator outages."
+                elevators.innerHTML = outage.outerHTML
+                document.getElementById("stationAlert").style.backgroundColor = "#679436"
             }
             else {
                 const outage = document.createElement("outage")
-                outage.innerHTML = `<h2> Alert! </h2><br> The ${res.ElevatorIncidents[1].LocationDescription} at ${res.ElevatorIncidents[1].StationName} is out of service.`
-                elevators.appendChild(outage)
+                outage.innerHTML = `<h2> Alert! </h2>The ${res.ElevatorIncidents[1].LocationDescription} at ${res.ElevatorIncidents[1].StationName} is out of service.`
+                elevators.innerHTML = outage.outerHTML
+                document.getElementById("stationAlert").style.backgroundColor = "#ed6a5e"
             }
         })
 }

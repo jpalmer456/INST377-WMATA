@@ -19,7 +19,7 @@
         </ul>
     </nav>
     <div class="info-box">
-        <div id="stationInformation">
+        <div id="stationSelect">
             <form name="stations" id="stationForm" onsubmit="selectedStation(); return false">
                 <label for="station"><h2>Select a Station:</h2></label>
                 <select id="station" name="station">     
@@ -35,11 +35,14 @@
             <div id="stationAddress">Selected station information will appear here.</div>
             <div id="stationTimes"></div>
         </div>
+        <br>
+        <div id="stationAlert">
+            <h3>Station Alert Information:</h3>
+            <div id="elevators"></div>
+        </div>
     </div>
     <div class="incident_box">
-        <aside id="sidebar"><h3>System Alert Information</h3></aside>
-        <br>
-        <aside id="elevators"><h3>Station Alert Information:</h3></aside>
+        <div id="sidebar"><h3>System Alert Information</h3></div>
     </div>
 </body>
 </html>

@@ -67,7 +67,7 @@ select {
     width: 400px;
 }
 
-#stationInformation {
+#stationSelect {
     background-color: #679436;
     border: 8px;
     border-style: outset;
@@ -104,14 +104,25 @@ select {
     width: 30%;
 }
 
-#elevators {
-    background-color: #6EA0C4;
+#stationAlert {
+    background-color: #679436;
     border: 8px;
-    border-color: #6EA0C4;
+    border-color: #679436;
     border-radius: 5px;
     padding: 5px 15px 20px 15px;
     margin-top: 2px;
     border-style: outset;
     border-color: 80A39F;
     font-size: 22px;
+}
+
+#stationInformation {
+    background-color: #A5BE00;
+    border: 8px;
+    border-style: outset;
+    border-color: #A5BE00;
+    font-size: 22px;
+    border-radius: 5px;
+    padding: 5px 15px 20px 15px;
+    margin-top: 2px;
 }
