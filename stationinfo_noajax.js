@@ -52,7 +52,8 @@ function selectedStation() {
     fetch(`https://api.wmata.com/Rail.svc/json/jStationTimes?StationCode=${selectedStation}`, {headers})
         .then((res) => res.json())
         .then((res) => {
-            document.getElementById("stationTimes").innerHTML = `<b>Opening Time:</b> ${res.StationTimes[0].Monday.OpeningTime}`
+            console.log(res)
+            document.getElementById("stationTimes").innerHTML = `<b>Weekday Opening Time:</b> ${res.StationTimes[0].Monday.OpeningTime} <br><b>Weekend Opening Time: </b>${res.StationTimes[0].Saturday.OpeningTime}`
         })
 
     fetch(`https://api.wmata.com/Incidents.svc/json/ElevatorIncidents?StationCode=${selectedStation}`, {headers})
