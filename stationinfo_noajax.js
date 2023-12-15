@@ -69,7 +69,7 @@ function selectedStation() {
             }
             else {
                 const outage = document.createElement("outage")
-                outage.innerHTML = `<h2> Alert! </h2>The ${res.ElevatorIncidents[1].LocationDescription} at ${res.ElevatorIncidents[1].StationName} is out of service.`
+                outage.innerHTML = `<h2> Alert! </h2>The ${res.ElevatorIncidents[0].LocationDescription} at ${res.ElevatorIncidents[0].StationName} is out of service.`
                 elevators.innerHTML = outage.outerHTML
                 document.getElementById("stationAlert").style.backgroundColor = "#ed6a5e"
             }
