@@ -1,5 +1,8 @@
 <h1><b>Title: MetroHelp</b></h1>
 
+<b>Team Members:</b>
+Emily Isaacson, Kenneth Hill, Jake Palmer
+
 <b>Description:</b> 
 Our project aims to equip users with information regarding rail lines and station information for the Washington Metropolitan Area Transit Authority  (WMATA). This includes information regarding locations, times, and alerts.
 
