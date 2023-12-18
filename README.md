@@ -6,4 +6,6 @@ Target Browser: We anticipate users to use Google Chrome due to its ease of use.
 
 User Manual:
 
+To find information on a specific station, users can click the drop-down menu on the Home page and select a station. They can then hit the 
+
 Developer Manual:
