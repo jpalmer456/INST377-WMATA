@@ -25,6 +25,9 @@ To run MetroHelp on your machine, first download the files from this GitHub repo
 <b>API Endpoints:</b>
 #make sure to mention JQuery
 
+<b>Known Bugs:</b>
+If a station exists on more than one line (for example, Metro Center exists on the Red, Orange, Blue, and Silver), then it may appear multiple times in the dropdown menu. The team was unable to resolve this issue, but hope to in future development. 
+
 <b>Future Development:</b> 
 
 In the future, the team would like to implement functionality that shows bus route information, rail station parking information, and station-to-station route planning. These should all be relatively simple to implement, as the WMATA API has authored endpoints that provide this information. 
