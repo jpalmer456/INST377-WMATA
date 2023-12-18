@@ -18,6 +18,13 @@ The About page contains information about the team, a list of MetroHelp function
 
 <h2>Developer Manual:</h2>
 
-<b>Running MetroHelp Locally:<b>
+<b>Running MetroHelp Locally:</b>
 
 To run MetroHelp on your machine, first download the files from this GitHub repository and open them in your IDE. Then, run the commands 'npm install' and 'npm run' to install the necessary packages. Once the installation has completed, navigate to your browser and enter 'localhost:3000' into your search bar. This will take you to MetroHelp's Home page. 
+
+<b>API Endpoints:</b>
+#make sure to mention JQuery
+
+<b>Future Development:</b> 
+
+In the future, the team would like to implement functionality that shows bus route information, rail station parking information, and station-to-station route planning. These should all be relatively simple to implement, as the WMATA API has authored endpoints that provide this information. 
