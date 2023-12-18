@@ -20,3 +20,7 @@ To run locally, you need to download the files from this repository and open the
 
 <b>API Endpoints:</b>
 
+<b>Future Development Plans:</b>
+
+In the future, our team would like to implement station-to-station route planning, as the WMATA API does have an endpoint that supplies that information when given two station IDs. Other functionality that we would be interested in including is bus station information as well as station parking information. These would also be easily implemented as the WMATA API provides endpoints for both. 
+
