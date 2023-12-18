@@ -20,7 +20,7 @@ The About page contains information about the team, a list of MetroHelp function
 
 <b>Running MetroHelp Locally:</b>
 
-To run MetroHelp on your machine, first download the files from this GitHub repository and open them in your IDE. Then, run the commands 'npm install' and 'npm run' to install the necessary packages. Once the installation has completed, navigate to your browser and enter 'localhost:3000' into your search bar. This will take you to MetroHelp's Home page. 
+To run MetroHelp on your machine, first download the files from this GitHub repository and open them in your IDE. Then, run the commands 'npm install' and 'npm start' to install the necessary packages. Once the installation has completed, navigate to your browser and enter 'localhost:3000' into your search bar. This will take you to MetroHelp's Home page. 
 
 <b>API Endpoints:</b>
 #make sure to mention JQuery
