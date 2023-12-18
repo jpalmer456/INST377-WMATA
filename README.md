@@ -31,4 +31,4 @@ In the future, the team would like to implement functionality that shows bus rou
 
 <b>Known Bugs:</b>
 
-If a station exists on more than one line (for example, Metro Center exists on the Red, Orange, Blue, and Silver), then it may appear multiple times in the dropdown menu. The team was unable to resolve this issue, but hope to in future development. 
+If a station exists on more than one line (for example, Metro Center exists on the Red, Orange, Blue, and Silver lines), then it may appear multiple times in the dropdown menu. The team was unable to resolve this issue, but hope to in future development. 
