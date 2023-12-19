@@ -23,12 +23,23 @@ The About page contains information about the team, a list of MetroHelp function
 - Backend: Node.js/Express/Supabase
     - Node.js - An open source server environment used for generating dynamic page content, file control (create, open, read, write, delete, close), collecting form data, and database control (add/delete/modify data). 
         - Express: Node.js framework used to implement easy RESTful APIs.
+        - Body-Parser - JSON parsing, serving static HTML files from '/public'
         - NPM - Node.js Package Manager - used to manage dependencies of Node.js packages
     - Supabase: Open source Postgres database (alternative to Firebase). Offers APIs and authentication, and used as the primary database to store comment data. 
 - Frontend: jQuery
     - jQuery - A JavaScript library designed for easy HTML DOM tree traversal and manipulation, as well as event handling, animations, and Ajax capabilities, among other things. 
 - Other: Nodemon
     - Nodemon - Node.js Utility script used for restarting server upon source file changes
+ 
+API Endpoints
+- /:
+-     serves index.html
+- /about:
+-     serve about.html
+- /comments 
+-     retrieves comments from the Supabase database. Supabase client queries the "comments" table and sends the JSON data as a response.
+- /comment:
+-     handles "Add New Comment" POST requests. Expects a JSON payload with "name" and "comment" fields, inserts data into the database, and sends the inserted data as a JSON response.
 
 <b>Running MetroHelp Locally:</b>
 
