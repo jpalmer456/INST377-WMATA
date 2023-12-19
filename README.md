@@ -19,7 +19,7 @@ The About page contains information about the team, a list of MetroHelp function
 <h2>Developer Manual:</h2>
 
 
-<b>Architecture:<b> Full-Stack Web Application built on NodeJs, Express, jQuery, and Supabase 
+<b>Architecture:</b> Full-Stack Web Application built on NodeJs, Express, jQuery, and Supabase 
 - Backend: Node.js/Express/Supabase
     - Node.js - An open source server environment used for generating dynamic page content, file control (create, open, read, write, delete, close), collecting form data, and database control (add/delete/modify data). 
         - Express: Node.js framework used to implement easy RESTful APIs.
@@ -35,7 +35,6 @@ The About page contains information about the team, a list of MetroHelp function
 To run MetroHelp on your machine, first download the files from this GitHub repository and open them in your IDE. Then, run the commands 'npm install' and 'npm start' to install the necessary packages. Once the installation has completed, navigate to your browser and enter 'localhost:3000' into your search bar. This will take you to MetroHelp's Home page. 
 
 <b>API Endpoints:</b>
-#make sure to mention JQuery
 
 <b>Future Development:</b> 
 
