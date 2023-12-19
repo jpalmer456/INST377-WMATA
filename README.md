@@ -19,27 +19,16 @@ The About page contains information about the team, a list of MetroHelp function
 <h2>Developer Manual:</h2>
 
 
-Architecture: Full-Stack Web Application built on NodeJs, Express, jQuery, and Supabase 
+<b>Architecture:<b> Full-Stack Web Application built on NodeJs, Express, jQuery, and Supabase 
 - Backend: Node.js/Express/Supabase
     - Node.js - An open source server environment used for generating dynamic page content, file control (create, open, read, write, delete, close), collecting form data, and database control (add/delete/modify data). 
         - Express: Node.js framework used to implement easy RESTful APIs.
         - NPM - Node.js Package Manager - used to manage dependencies of Node.js packages
     - Supabase: Open source Postgres database (alternative to Firebase). Offers APIs and authentication, and used as the primary database to store comment data. 
 - Frontend: jQuery
-    - jQuery - A javascript library designed for easy HTML DOM tree traversal and manipulation, as well as event handling, animations, and Ajax capabilities, among other things. 
+    - jQuery - A JavaScript library designed for easy HTML DOM tree traversal and manipulation, as well as event handling, animations, and Ajax capabilities, among other things. 
 - Other: Nodemon
     - Nodemon - Node.js Utility script used for restarting server upon source file changes
-Setup/Install
-- Download App
-    - unzip the Git Repository to a new project folder 
-- Install Dependencies
-    - Open the terminal and navigate to the project folder. Then, use this command:
-    - npm install
-- Launch Server: Then, run the following command to deploy the server:
-    - Npm start
-- Visit Localhost: Open your browser and visit the URL localhost:3000. That’s it!
-
-
 
 <b>Running MetroHelp Locally:</b>
 
