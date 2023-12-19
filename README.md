@@ -1,5 +1,7 @@
 <h1>Title: MetroHelp</h1>
 
+<b>Link to Web Deployment:<b>https://inst-377-wmata.vercel.app
+
 <b>Group Members:</b> Emily Isaacson, Kenneth Hill, Jake Palmer
 
 <b>Description:</b> Our project aims to equip users with information regarding rail lines and station information for the Washington Metropolitan Area Transit Authority  (WMATA). This includes information regarding locations, fares, times, and parking.
