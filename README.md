@@ -1,6 +1,6 @@
 <h1>Title: MetroHelp</h1>
 
-<b>Link to Web Deployment:</b>https://inst-377-wmata.vercel.app
+<b>Link to Web Deployment:</b> https://inst-377-wmata.vercel.app
 
 <b>Group Members:</b> Emily Isaacson, Kenneth Hill, Jake Palmer
 
